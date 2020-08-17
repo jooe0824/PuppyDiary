@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main"
+        android:icon="@drawable/tab_main_calendar"
+        android:title="calendar" />
+    <item
+        android:id="@+id/menu_map"
+        android:title="weight"
+        android:icon="@drawable/tab_main_kg"/>
+    <item
+        android:id="@+id/menu_interest"
+        android:title="money"
+        android:icon="@drawable/tab_main_money"/>
+    <item
+        android:id="@+id/menu_mypage"
+        android:icon="@drawable/tab_main_puppy"
+        android:title="my puppy" />
+</menu>
