@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity{
         MoneyFragment money = new MoneyFragment();
         adapter.addItem(money);
 
+        MypuppyFragment my = new MypuppyFragment();
+        adapter.addItem(my);
+
         pager.setAdapter(adapter);
 
     }
