@@ -1,64 +1,66 @@
 package org.techtown.puppydiary;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
 
+import java.util.ArrayList;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
-
-public class MainActivity extends Activity implements View.OnClickListener {
-
-
-    public static String LOG_TAG = "MainActivity";
+public class MainActivity extends AppCompatActivity{
+    ViewPager pager;
 
     @Override
-
-    protected void onCreate(Bundle savedInstanceState) {
-
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
 
+        pager = findViewById(R.id.viewPager);
+        pager.setOffscreenPageLimit(4);
 
+        MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager());
 
+        CalendarFragment calendar = new CalendarFragment();
+        adapter.addItem(calendar);
 
-        //막대 그래프
+        KgFragment kg = new KgFragment();
+        adapter.addItem(kg);
 
-        Button btnBarChart =  (Button)findViewById(R.id.btnBarChart);
+        MoneyFragment money = new MoneyFragment();
+        adapter.addItem(money);
 
-        btnBarChart.setOnClickListener(this);
+        pager.setAdapter(adapter);
 
     }
 
 
-    @Override
-
-    public void onClick(View v) {
-
-        switch (v.getId()) {
 
 
+    class MyPagerAdapter extends FragmentStatePagerAdapter {
+        ArrayList<Fragment> items = new ArrayList<Fragment>();
+        public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
 
-            //막대 그래프(Bar Chart)
+        @NonNull
+        @Override
+        public Fragment getItem(int position) {
+            return items.get(position);
+        }
 
-            case R.id.btnBarChart:
+        public void addItem(Fragment item){
+            items.add(item);
+        }
 
-                Toast.makeText(MainActivity.this, "Bar Chart", Toast.LENGTH_LONG);
-
-                Log.i(LOG_TAG, "Bar Chart Start...");
-
-                startActivity(new Intent(this, KgActivity.class));
-
-                break;
-
+        @Override
+        public int getCount() {
+            return items.size();
         }
 
     }

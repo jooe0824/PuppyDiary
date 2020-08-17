@@ -35,14 +35,14 @@
                 android:id="@+id/blank"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:textSize="15sp" />
 
             <Button
                 android:id="@+id/jan"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Jan"
                 android:textSize="15sp" />
 
@@ -50,7 +50,7 @@
                 android:id="@+id/feb"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Feb"
                 android:textSize="15sp" />
 
@@ -58,7 +58,7 @@
                 android:id="@+id/mar"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Mar"
                 android:textSize="15sp" />
 
@@ -66,7 +66,7 @@
                 android:id="@+id/apr"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Apr"
                 android:textSize="15sp" />
 
@@ -74,7 +74,7 @@
                 android:id="@+id/may"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="May"
                 android:textSize="15sp" />
 
@@ -82,7 +82,7 @@
                 android:id="@+id/jun"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Jun"
                 android:textSize="15sp" />
 
@@ -90,7 +90,7 @@
                 android:id="@+id/jul"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Jul"
                 android:textSize="15sp" />
 
@@ -98,7 +98,7 @@
                 android:id="@+id/aug"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Aug"
                 android:textSize="15sp" />
 
@@ -106,7 +106,7 @@
                 android:id="@+id/sep"
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Sep"
                 android:textSize="15sp" />
 
@@ -114,7 +114,7 @@
                 android:id="@+id/oct"
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Oct"
                 android:textSize="15sp" />
 
@@ -122,7 +122,7 @@
                 android:id="@+id/nov"
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Nov"
                 android:textSize="15sp" />
 
@@ -130,7 +130,7 @@
                 android:id="@+id/dec"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
-                android:background="@drawable/rect_box"
+                android:background="@drawable/rect_kg_box"
                 android:text="Dec"
                 android:textSize="15sp" />
 

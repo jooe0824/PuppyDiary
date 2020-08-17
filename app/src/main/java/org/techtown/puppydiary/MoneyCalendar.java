@@ -3,9 +3,9 @@ package org.techtown.puppydiary;
         import android.content.Intent;
         import android.os.Bundle;
         import android.os.PersistableBundle;
-        import android.support.annotation.NonNull;
-        import android.support.annotation.Nullable;
-        import android.support.v7.app.AppCompatActivity;
+        //import android.support.annotation.NonNull;
+       // import android.support.annotation.Nullable;
+       // import android.support.v7.app.AppCompatActivity;
         import android.util.Log;
         import android.widget.CalendarView;
 
@@ -13,9 +13,6 @@ package org.techtown.puppydiary;
         import androidx.annotation.Nullable;
         import androidx.appcompat.app.AppCompatActivity;
 
-/**
- * Created by 1hk_s on 2018-06-02.
- */
 
 public class MoneyCalendar extends AppCompatActivity {
 

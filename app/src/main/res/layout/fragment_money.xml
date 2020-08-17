@@ -21,14 +21,13 @@
 
             <TextView
                 android:id="@+id/date"
-                android:layout_width="0dp"
+                android:layout_width="350dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:layout_weight="1"
                 android:gravity="center_horizontal|center_vertical"
-                android:hint="   <    DATE   >"
-                android:textSize="30dp" />
+                android:text="date"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/money_calendar"
@@ -39,7 +38,7 @@
                 android:layout_alignParentTop="true"
                 android:background="@drawable/tab_main_calendar"
                 android:textColor="#E87D75" />
-            " />
+
 
         </LinearLayout>
 
@@ -48,7 +47,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="7"
-            android:background="#FFFFFF"></ListView>
+            android:background="#FFFFFF" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -63,6 +63,7 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:background="#9EF9EF"
+            android:inputType="text"
             android:hint="what?"
             android:textSize="20dp" />
 
@@ -73,8 +74,8 @@
             android:layout_weight="2"
             android:background="#9EF9EF"
             android:hint="how much?"
-            android:numeric="integer"
-            android:textSize="20dp" />
+            android:inputType="number"
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="0dp"
@@ -112,7 +113,7 @@
             android:background="#8FFAEB"
             android:gravity="right|center_vertical"
             android:hint="0"
-            android:textSize="23dp" />
+            android:textSize="23sp" />
     </LinearLayout>
 
 </LinearLayout>

@@ -18,55 +18,60 @@
 
     <TextView
         android:id="@+id/money"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
         android:layout_marginTop="52dp"
         android:gravity="center_vertical"
         android:text="금액"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date" />
 
     <TextView
         android:id="@+id/memo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
         android:layout_marginTop="52dp"
         android:gravity="center_vertical"
         android:text="메모"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/money" />
 
     <TextView
         android:id="@+id/date"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="200dp"
         android:gravity="center_vertical"
         android:text="날짜"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
         android:background="#9EF9EF"
         android:text="수정"
         android:textSize="23sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
 
     <Button
         android:id="@+id/delete"
@@ -76,8 +81,12 @@
         android:text="삭제"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toEndOf="@+id/edit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
 
     <TextView
         android:id="@+id/date_data"
@@ -85,11 +94,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginLeft="84dp"
+        android:layout_marginTop="200dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="date_data"
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/date"
-        tools:layout_editor_absoluteY="197dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/date_data2"
@@ -97,22 +107,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginLeft="84dp"
+        android:layout_marginTop="60dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="date_data"
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/money"
-        tools:layout_editor_absoluteY="283dp" />
+        app:layout_constraintTop_toBottomOf="@+id/date_data" />
 
     <TextView
         android:id="@+id/date_data3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="date_data"
         android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/memo"
-        tools:layout_editor_absoluteY="370dp" />
+        app:layout_constraintTop_toBottomOf="@+id/date_data2"
+        app:layout_constraintVertical_bias="0.165" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
