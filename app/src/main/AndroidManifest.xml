@@ -15,6 +15,7 @@
         <activity android:name=".MoneyTab"/>
         <activity android:name=".KgPopup"/>
         <activity android:name=".MypuppyTab"/>
+
         <activity android:name=".MoneyEdit"/>
 
         <activity android:name=".MainActivity">

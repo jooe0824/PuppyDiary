@@ -1,6 +1,5 @@
 package org.techtown.puppydiary;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -19,16 +18,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.techtown.puppydiary.MoneyEdit;
-import org.techtown.puppydiary.R;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 
 public class CalendarTab extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     ActionBar actionBar;
-    public static String realmediname;
     // public static Context context;
 
     public static int SUNDAY = 1;
@@ -52,6 +47,9 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
     Calendar mCal;
     Calendar mNextMonthCalendar;
 
+    Button pvs_button;
+    Button nxt_button;
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
@@ -65,7 +63,7 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
 
        // MoneyEdit.context = getApplicationContext();
         actionBar = getSupportActionBar();
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xff006aff));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
 
         Button cal = findViewById(R.id.calendar);
@@ -108,15 +106,14 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
             }
         });
 
-        tvDate = (TextView) findViewById(R.id.tv_date);
-        gridView = (GridView) findViewById(R.id.gridview);
+        tvDate = findViewById(R.id.tv_date);
+        gridView = findViewById(R.id.gridview);
 
-        Button pvs_button = findViewById(R.id.previous);
-        Button nxt_button = findViewById(R.id.next);
+        pvs_button = findViewById(R.id.previous);
+        nxt_button = findViewById(R.id.next);
 
         pvs_button.setOnClickListener(this);
         nxt_button.setOnClickListener(this);
-        gridView.setOnItemClickListener(this);
 
         dayList = new ArrayList<DayInfo>();
 
@@ -190,12 +187,12 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
 
     //지난달, 다음달 구현
     public void onClick(View v) {
-        if (v.getId()==R.id.previous){
+        if (v.getId()== R.id.previous){
             mCal.set(mCal.get(Calendar.YEAR), mCal.get(Calendar.MONTH), 1);
             mCal.add(Calendar.MONTH, -1);
             tvDate.setText((mCal.get(Calendar.MONTH) + 1) + "월");
             getCalendar(mCal);
-        } else if (v.getId()==R.id.next) {
+        } else if (v.getId()== R.id.next) {
             mCal.set(mCal.get(Calendar.YEAR), mCal.get(Calendar.MONTH), 1);
             mCal.add(Calendar.MONTH, +1);
             tvDate.setText((mCal.get(Calendar.MONTH) + 1) + "월");
@@ -207,40 +204,39 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
     // 그리드뷰 어댑터
     public class GridAdapter extends BaseAdapter {
 
-        private ArrayList<DayInfo> dayList;
-        private Context context;
-        private int resource;
-        private LayoutInflater inflater;
+        private ArrayList<DayInfo> mdayList;
+        private Context mcontext;
+        private int mresource;
+        private LayoutInflater minflater;
 
-        // 생성자 @param context @param list
         public GridAdapter(Context context, int textResource, ArrayList<DayInfo> dayList) {
-            this.context = context;
-            this.dayList = dayList;
-            this.resource = textResource;
-            this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            this.mcontext = context;
+            this.mdayList = dayList;
+            this.mresource = textResource;
+            this.minflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
 
         @Override
         public int getCount() {
-            return dayList.size();
+            return mdayList.size();
         }
 
         @Override
         public Object getItem(int position) {
-            return dayList.get(position);
+            return mdayList.get(position);
         }
 
         @Override
         public long getItemId(int position) {
-            return position;
+            return 0;
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
             DayInfo day = dayList.get(position);
             ViewHolder holder = null;
             if (convertView == null) {
-                convertView = inflater.inflate(R.layout.item_calendar, parent, false);
+                convertView = minflater.inflate(mresource, null);
                 convertView.setLayoutParams(new GridView.LayoutParams(1080 / 7 + 1080 % 7, 200));
                 holder = new ViewHolder();
                 holder.tvItem = (TextView) convertView.findViewById(R.id.tv_item_gridview);
@@ -265,6 +261,21 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
                     holder.injection.setVisibility(View.INVISIBLE);
                 }
             }
+
+            convertView.setId(position);
+            convertView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    DayInfo day = mdayList.get(position);
+
+                    //해당 월에 해당하는 날짜일 때
+                    if(day.isInMonth()) {
+                        Intent intent = new Intent(CalendarTab.this, CalendarItem.class);
+                        startActivity(intent);
+                    }
+                }
+            });
 
             return convertView;
         }

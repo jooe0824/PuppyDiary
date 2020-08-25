@@ -55,10 +55,10 @@ public class MoneyEdit extends AppCompatActivity {
 
                 Intent intent_kg = new Intent(getApplicationContext(), MoneyTab.class); //일단 바로 검색결과 띄음
                 startActivity(intent_kg);
-                 Toast toastView = Toast.makeText(getApplicationContext(), "수정되었습니다" , Toast.LENGTH_LONG);
+                Toast toastView = Toast.makeText(getApplicationContext(), "수정되었습니다" , Toast.LENGTH_LONG);
 
-                                          toastView.setGravity( Gravity.TOP| Gravity.LEFT, 180, 700); //토스트 메시지 위치 x,y좌표로 바꿀 수 있다.
-                                          toastView.show();
+                toastView.setGravity( Gravity.TOP| Gravity.LEFT, 180, 700); //토스트 메시지 위치 x,y좌표로 바꿀 수 있다.
+                toastView.show();
             }
         });
         Button button2 = findViewById(R.id.delete);

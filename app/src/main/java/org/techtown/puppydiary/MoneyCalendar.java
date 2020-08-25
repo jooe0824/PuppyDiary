@@ -1,6 +1,7 @@
 package org.techtown.puppydiary;
 
         import android.content.Intent;
+        import android.graphics.drawable.ColorDrawable;
         import android.os.Bundle;
         import android.os.PersistableBundle;
         //import android.support.annotation.NonNull;
@@ -11,10 +12,13 @@ package org.techtown.puppydiary;
 
         import androidx.annotation.NonNull;
         import androidx.annotation.Nullable;
+        import androidx.appcompat.app.ActionBar;
         import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MoneyCalendar extends AppCompatActivity {
+
+    ActionBar actionBar;
 
     private static final String TAG = "CalendarActivity";
     private CalendarView mCalendarView;
@@ -23,6 +27,11 @@ public class MoneyCalendar extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_money_calendar);
+
+        actionBar = getSupportActionBar();
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
+        getSupportActionBar().setTitle("댕댕이어리");
+        getSupportActionBar().setIcon(R.drawable.tab_main_puppy);
 
         mCalendarView = (CalendarView) findViewById(R.id.calendarView);
 

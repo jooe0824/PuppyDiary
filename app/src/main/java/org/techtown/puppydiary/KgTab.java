@@ -40,6 +40,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import org.techtown.puppydiary.R;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import android.graphics.Color;
@@ -54,9 +55,11 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import java.util.ArrayList;
 
 public class KgTab extends AppCompatActivity {
-
+    private TextView tvDate;
     private  static Context context;
     ActionBar actionBar;
+    Calendar mCal;
+
 
 /*
     MainActivity mainActivity;
@@ -79,11 +82,17 @@ public class KgTab extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kg);
 
+        tvDate = (TextView) findViewById(R.id.tv_date);
+        mCal = Calendar.getInstance();
+
         // MoneyEdit.context = getApplicationContext();
         actionBar = getSupportActionBar();
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(R.color.Mycolor));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
         getSupportActionBar().setIcon(R.drawable.tab_main_puppy);
+
+        // 캘린더 타이틀(년월 표시)을 세팅한다.
+        tvDate.setText((mCal.get(Calendar.MONTH) + 1) + "월");
 
         Button cal = findViewById(R.id.calendar);
         cal.setOnClickListener(new View.OnClickListener() {
@@ -135,6 +144,25 @@ public class KgTab extends AppCompatActivity {
                 }
         });
 
+        Button pvs_button = findViewById(R.id.previous);
+        Button nxt_button = findViewById(R.id.next);
+
+        pvs_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                        mCal.add(Calendar.MONTH, -1);
+                        tvDate.setText((mCal.get(Calendar.MONTH) + 1) + "월");
+                }
+        });
+        nxt_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCal.add(Calendar.MONTH, +1);
+                tvDate.setText((mCal.get(Calendar.MONTH) + 1) + "월");
+            }
+        });
+
+
         HorizontalBarChart chart = (HorizontalBarChart) findViewById(R.id.chart);
 
         chart.getXAxis().setDrawGridLines(false); //grid 선 없애주기
@@ -184,6 +212,8 @@ public class KgTab extends AppCompatActivity {
         chart.invalidate(); //invalidate 해줘야 함
 
     }
+
+
 
 
     private ArrayList<String> getXAxisValues() { //x축 라벨 추가

@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity{
 
         // MoneyEdit.context = getApplicationContext();
         actionBar = getSupportActionBar();
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xff006aff));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
 
         Button button = findViewById(R.id.splash);
