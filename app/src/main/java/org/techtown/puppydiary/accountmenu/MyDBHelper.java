@@ -1,14 +1,14 @@
-package org.techtown.puppydiary;
+package org.techtown.puppydiary.accountmenu;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import static org.techtown.puppydiary.MoneyTab.KEY_CONTEXT;
-import static org.techtown.puppydiary.MoneyTab.KEY_DATE;
-import static org.techtown.puppydiary.MoneyTab.KEY_ID;
-import static org.techtown.puppydiary.MoneyTab.KEY_PRICE;
-import static org.techtown.puppydiary.MoneyTab.TABLE_NAME;
+import static org.techtown.puppydiary.accountmenu.MoneyTab.KEY_CONTEXT;
+import static org.techtown.puppydiary.accountmenu.MoneyTab.KEY_DATE;
+import static org.techtown.puppydiary.accountmenu.MoneyTab.KEY_ID;
+import static org.techtown.puppydiary.accountmenu.MoneyTab.KEY_PRICE;
+import static org.techtown.puppydiary.accountmenu.MoneyTab.TABLE_NAME;
 
 class MyDBHelper extends SQLiteOpenHelper {
     public MyDBHelper(Context context) {

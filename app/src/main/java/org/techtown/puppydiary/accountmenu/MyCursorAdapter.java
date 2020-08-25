@@ -1,4 +1,4 @@
-package org.techtown.puppydiary;
+package org.techtown.puppydiary.accountmenu;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
+
+import org.techtown.puppydiary.R;
+import org.techtown.puppydiary.accountmenu.MoneyTab;
 
 /**
  * Created by 1hk_s on 2018-06-07.

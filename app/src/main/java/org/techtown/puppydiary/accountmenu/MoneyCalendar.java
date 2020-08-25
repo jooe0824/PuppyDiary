@@ -1,9 +1,8 @@
-package org.techtown.puppydiary;
+package org.techtown.puppydiary.accountmenu;
 
         import android.content.Intent;
         import android.graphics.drawable.ColorDrawable;
         import android.os.Bundle;
-        import android.os.PersistableBundle;
         //import android.support.annotation.NonNull;
        // import android.support.annotation.Nullable;
        // import android.support.v7.app.AppCompatActivity;
@@ -14,6 +13,9 @@ package org.techtown.puppydiary;
         import androidx.annotation.Nullable;
         import androidx.appcompat.app.ActionBar;
         import androidx.appcompat.app.AppCompatActivity;
+
+        import org.techtown.puppydiary.MainActivity;
+        import org.techtown.puppydiary.R;
 
 
 public class MoneyCalendar extends AppCompatActivity {

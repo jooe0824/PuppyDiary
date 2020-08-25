@@ -18,6 +18,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.techtown.puppydiary.accountmenu.MoneyTab;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 

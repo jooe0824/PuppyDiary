@@ -1,6 +1,5 @@
-package org.techtown.puppydiary;
+package org.techtown.puppydiary.accountmenu;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,10 +8,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,7 +17,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+
+import org.techtown.puppydiary.CalendarTab;
+import org.techtown.puppydiary.KgTab;
+import org.techtown.puppydiary.MypuppyTab;
+import org.techtown.puppydiary.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

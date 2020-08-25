@@ -11,12 +11,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".KgTab"/>
         <activity android:name=".CalendarTab"/>
-        <activity android:name=".MoneyCalendar"/>
-        <activity android:name=".MoneyTab"/>
+        <activity android:name=".accountmenu.MoneyCalendar"/>
+        <activity android:name=".accountmenu.MoneyTab"/>
         <activity android:name=".KgPopup"/>
         <activity android:name=".MypuppyTab"/>
 
-        <activity android:name=".MoneyEdit"/>
+        <activity android:name=".accountmenu.MoneyEdit"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>
