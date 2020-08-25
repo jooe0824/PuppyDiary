@@ -3,32 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:overScrollMode="never"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/splash"
+        android:layout_width="304dp"
+        android:layout_height="232dp"
+        android:background="@drawable/color_puppy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/navigation">
+        app:layout_constraintVertical_bias="0.395" />
 
-
-
-    </androidx.viewpager.widget.ViewPager>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#F8F8F8"
-        app:itemIconSize="50dp"
-        app:itemIconTint="#E91E63"
-        app:itemTextColor="#E689A8"
-        app:labelVisibilityMode="unlabeled"
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="198dp"
+        android:layout_height="89dp"
+        android:fontFamily="@font/notosans_cjkkr_bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="댕댕이어리"
+        android:textColor="#A306BD"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/viewPager"
-        app:menu="@menu/menu" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

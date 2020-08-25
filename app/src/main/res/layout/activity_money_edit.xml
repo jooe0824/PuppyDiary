@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/close"
         android:layout_width="50dp"
         android:layout_height="52dp"
         android:background="#DC6767"
@@ -64,8 +64,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginLeft="84dp"
-        android:background="#9EF9EF"
+        android:background="#E5285B"
         android:text="수정"
+        android:textColor="#F9F9F9"
         android:textSize="23sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,8 +78,9 @@
         android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#9EF9EF"
         android:text="삭제"
+        android:background="#E5285B"
+        android:textColor="#F9F9F9"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

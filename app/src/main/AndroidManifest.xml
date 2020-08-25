@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".KgFragment"/>
-        <activity android:name=".CalendarFragment"/>
+        <activity android:name=".KgTab"/>
+        <activity android:name=".CalendarTab"/>
         <activity android:name=".MoneyCalendar"/>
-        <activity android:name=".MoneyFragment"/>
+        <activity android:name=".MoneyTab"/>
+        <activity android:name=".KgPopup"/>
+        <activity android:name=".MypuppyTab"/>
+        <activity android:name=".MoneyEdit"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

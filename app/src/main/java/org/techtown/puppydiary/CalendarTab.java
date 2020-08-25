@@ -1,9 +1,13 @@
 package org.techtown.puppydiary;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -12,12 +16,20 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import org.techtown.puppydiary.MoneyEdit;
+import org.techtown.puppydiary.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class CalendarFragment extends Fragment implements View.OnClickListener, AdapterView.OnItemClickListener{
+public class CalendarTab extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
+
+    ActionBar actionBar;
+    public static String realmediname;
+    // public static Context context;
 
     public static int SUNDAY = 1;
     public static int MONDAY = 2;
@@ -36,18 +48,71 @@ public class CalendarFragment extends Fragment implements View.OnClickListener, 
     //day 저장 리스트
     private ArrayList<DayInfo> dayList;
 
-        Calendar mLastMonthCalendar;
-        Calendar mCal;
-        Calendar mNextMonthCalendar;
+    Calendar mLastMonthCalendar;
+    Calendar mCal;
+    Calendar mNextMonthCalendar;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup rootView  = (ViewGroup) inflater.inflate(R.layout.fragment_calendar, container, false); //container 라는 뷰 안에 첫번째 인자를 넣어줘라, 메모리에 올려준 것
-        tvDate = (TextView) rootView.findViewById(R.id.tv_date);
-        gridView = (GridView) rootView.findViewById(R.id.gridview);
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
 
-        Button pvs_button = rootView.findViewById(R.id.previous);
-        Button nxt_button = rootView.findViewById(R.id.next);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_calendar);
+
+       // MoneyEdit.context = getApplicationContext();
+        actionBar = getSupportActionBar();
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xff006aff));
+        getSupportActionBar().setTitle("댕댕이어리");
+
+        Button cal = findViewById(R.id.calendar);
+        cal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_calendar = new Intent(getApplicationContext(), CalendarTab.class);
+                startActivity(intent_calendar);
+            }
+        });
+
+        Button kg = findViewById(R.id.kg);
+        kg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_kg = new Intent(getApplicationContext(), KgTab.class);
+                startActivity(intent_kg);
+            }
+        });
+
+        Button money = findViewById(R.id.account1);
+        money.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_money = new Intent(getApplicationContext(), MoneyTab.class);
+                startActivity(intent_money);
+            }
+        });
+
+        Button puppy = findViewById(R.id.puppy);
+        puppy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_puppy = new Intent(getApplicationContext(), MypuppyTab.class);
+                startActivity(intent_puppy);
+            }
+        });
+
+        tvDate = (TextView) findViewById(R.id.tv_date);
+        gridView = (GridView) findViewById(R.id.gridview);
+
+        Button pvs_button = findViewById(R.id.previous);
+        Button nxt_button = findViewById(R.id.next);
 
         pvs_button.setOnClickListener(this);
         nxt_button.setOnClickListener(this);
@@ -58,9 +123,8 @@ public class CalendarFragment extends Fragment implements View.OnClickListener, 
         mCal = Calendar.getInstance();
         mCal.set(Calendar.DAY_OF_MONTH, 1);
         getCalendar(mCal);
-
-        return rootView;
     }
+
     //캘린더 구현
     private void getCalendar(Calendar mCal) {
 
@@ -241,6 +305,3 @@ public class CalendarFragment extends Fragment implements View.OnClickListener, 
         } //정보저장
     }
 }
-
-
-

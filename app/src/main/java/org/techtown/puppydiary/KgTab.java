@@ -1,13 +1,18 @@
 package org.techtown.puppydiary;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 //import android.support.v7.app.AppCompatActivity;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,14 +53,89 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-public class KgFragment extends Fragment {
+public class KgTab extends AppCompatActivity {
+
+    private  static Context context;
+    ActionBar actionBar;
+
+/*
+    MainActivity mainActivity;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup rootView  = (ViewGroup) inflater.inflate(R.layout.fragment_kg, container, false); //container 라는 뷰 안에 첫번째 인자를 넣어줘라, 메모리에 올려준 것
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mainActivity = (MainActivity)getActivity();
+    }
 
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mainActivity = null;
+    }*/
 
-        HorizontalBarChart chart = (HorizontalBarChart) rootView.findViewById(R.id.chart);
+    @SuppressLint("ResourceAsColor")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_kg);
+
+        // MoneyEdit.context = getApplicationContext();
+        actionBar = getSupportActionBar();
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(R.color.Mycolor));
+        getSupportActionBar().setTitle("댕댕이어리");
+        getSupportActionBar().setIcon(R.drawable.tab_main_puppy);
+
+        Button cal = findViewById(R.id.calendar);
+        cal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_calendar = new Intent(getApplicationContext(), CalendarTab.class); //일단 바로 검색결과 띄음
+                startActivity(intent_calendar);
+            }
+        });
+
+        Button kg = findViewById(R.id.kg);
+        kg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_kg = new Intent(getApplicationContext(), KgTab.class); //일단 바로 검색결과 띄음
+                startActivity(intent_kg);
+            }
+        });
+
+        Button money = findViewById(R.id.account);
+        money.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_money = new Intent(getApplicationContext(), MoneyTab.class); //일단 바로 검색결과 띄음
+                startActivity(intent_money);
+            }
+        });
+
+        Button puppy = findViewById(R.id.puppy);
+        puppy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_puppy = new Intent(getApplicationContext(), MypuppyTab.class); //일단 바로 검색결과 띄음
+                startActivity(intent_puppy);
+            }
+        });
+
+        Button jan = findViewById(R.id.jan);
+        jan.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+
+                    Intent intent_kgpopup = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                    startActivity(intent_kgpopup);
+                }
+        });
+
+        HorizontalBarChart chart = (HorizontalBarChart) findViewById(R.id.chart);
 
         chart.getXAxis().setDrawGridLines(false); //grid 선 없애주기
         XAxis x = chart.getXAxis(); //x라는 변수 만들어서 이용
@@ -103,7 +183,6 @@ public class KgFragment extends Fragment {
         chart.animateXY(2000, 2000); //애니메이션 기능 추가
         chart.invalidate(); //invalidate 해줘야 함
 
-        return rootView;
     }
 
 
@@ -148,7 +227,6 @@ public class KgFragment extends Fragment {
 
         return dataset;
     }
-
 
 
 }

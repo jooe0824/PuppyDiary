@@ -3,28 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    android:layout_height="229dp">
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="16dp"
-        >
-
-    </androidx.constraintlayout.widget.Guideline>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp">
-
-    </androidx.constraintlayout.widget.Guideline>
 
     <TextView
         android:id="@+id/weight"
@@ -40,27 +20,27 @@
 
     <Button
         android:id="@+id/kg_confirm"
-        android:layout_width="65dp"
-        android:layout_height="48dp"
+        android:layout_width="97dp"
+        android:layout_height="63dp"
         android:background="#FDFAFA"
         android:text="확인"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.724" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="36dp"
-        android:layout_height="40dp"
+        android:id="@+id/close"
+        android:layout_width="47dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
         android:background="#DC6767"
         android:text="X"
         android:textColor="#FFFEFE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

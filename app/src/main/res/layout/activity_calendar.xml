@@ -37,19 +37,22 @@
             android:background="@drawable/right_arrow"
             android:gravity="center" />
 
+
+
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/tv_day"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="⠀    일ㅤ⠀    월⠀⠀⠀ㅤ화⠀⠀⠀ㅤ수⠀⠀⠀ㅤ목⠀⠀⠀ㅤ금⠀⠀⠀ㅤ토"
+        android:text="⠀ 일ㅤ⠀ 월⠀⠀⠀ㅤ화⠀⠀⠀ㅤ수⠀⠀⠀ㅤ목⠀⠀⠀ㅤ금⠀⠀⠀ㅤ토"
         android:textSize="15sp" />
 
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:numColumns="7"
         android:stretchMode="columnWidth">
@@ -58,37 +61,37 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_weight="1"
+        android:layout_height="80dp"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/calendar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/calendar" />
+            android:background="@drawable/color_calendar" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/kg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/weight" />
+            android:background="@drawable/tab_main_kg" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/account1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/account" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/puppy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/profile" />
+            android:background="@drawable/tab_main_puppy" />
     </LinearLayout>
+
 
 </LinearLayout>

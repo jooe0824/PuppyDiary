@@ -11,10 +11,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="045e4178-f0b5-4cd9-8820-a7f378a9fd97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MypuppyFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/radius.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mypuppy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/KgPopup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MoneyEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MoneyTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/color_account.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/color_calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/color_kg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/color_puppy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/CalendarFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/CalendarTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/KgFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/KgTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MoneyFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MypuppyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MypuppyTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/color/white.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rect_money.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/account.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/account.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/calendar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/calendar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tab_main_kg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tab_main_kg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/tab_main_puppy.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tab_main_puppy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_kg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_kg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_kg_upload.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_kg_upload.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_money.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_money.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_money_edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_money_edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_mypuppy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mypuppy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +80,7 @@
       <list>
         <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -53,9 +95,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1597673108345" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1598284257073" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -65,6 +109,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.techtown.puppydiary" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.techtown.puppydiary" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,30 +199,57 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2213" y="256" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1597675620770" />
+    <state x="494" y="316" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598341586002">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="494" y="316" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1598341586002" />
+    <state x="470" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598336602630">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state x="470" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.810@0.23.1440.810" timestamp="1598336602630" />
     <state x="2138" y="294" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1597675945313">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2138" y="294" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1597675945313" />
-    <state x="2473" y="302" key="AndroidCreateResourceFileDialog" timestamp="1597676575751">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="616" y="252" key="AndroidCreateResourceFileDialog" timestamp="1598343445490">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="2473" y="302" key="AndroidCreateResourceFileDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1597676575751" />
-    <state width="1423" height="-8" key="GridCell.Tab.0.bottom" timestamp="1597677548832">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state x="616" y="252" key="AndroidCreateResourceFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1598343445490" />
+    <state width="1207" height="188" key="GridCell.Tab.0.bottom" timestamp="1598358620571">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1423" height="-8" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1597677548832" />
-    <state width="1423" height="-8" key="GridCell.Tab.0.center" timestamp="1597677548830">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1396" height="290" key="GridCell.Tab.0.bottom/0.23.1440.810/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597683317291" />
+    <state width="1348" height="286" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1598336611006" />
+    <state width="1207" height="188" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1598358620571" />
+    <state width="1288" height="188" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1598343042022" />
+    <state width="1207" height="188" key="GridCell.Tab.0.center" timestamp="1598358620570">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1423" height="-8" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1597677548830" />
-    <state width="1423" height="-8" key="GridCell.Tab.0.left" timestamp="1597677548828">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1396" height="290" key="GridCell.Tab.0.center/0.23.1440.810/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597683317290" />
+    <state width="1348" height="286" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1598336611006" />
+    <state width="1207" height="188" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1598358620570" />
+    <state width="1288" height="188" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1598343042020" />
+    <state width="1207" height="188" key="GridCell.Tab.0.left" timestamp="1598358620570">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1423" height="-8" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1597677548828" />
-    <state width="1423" height="-8" key="GridCell.Tab.0.right" timestamp="1597677548831">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1396" height="290" key="GridCell.Tab.0.left/0.23.1440.810/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597683317289" />
+    <state width="1348" height="286" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1598336611005" />
+    <state width="1207" height="188" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1598358620570" />
+    <state width="1288" height="188" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1598343042019" />
+    <state width="1207" height="188" key="GridCell.Tab.0.right" timestamp="1598358620571">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state width="1423" height="-8" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1597677548831" />
+    <state width="1396" height="290" key="GridCell.Tab.0.right/0.23.1440.810/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597683317290" />
+    <state width="1348" height="286" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1598336611006" />
+    <state width="1207" height="188" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1598358620571" />
+    <state width="1288" height="188" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1598343042021" />
+    <state x="515" y="235" key="chooseDestDirectoryDialog" timestamp="1598346302290">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="515" y="235" key="chooseDestDirectoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1598341815982" />
+    <state x="515" y="235" key="chooseDestDirectoryDialog/0.23.1440.814@0.23.1440.814" timestamp="1598346302290" />
+    <state x="515" y="237" key="chooseDestDirectoryDialog/0.23.1440.821@0.23.1440.821" timestamp="1598345633789" />
     <state x="2121" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1597673085003">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
@@ -181,5 +258,9 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2107" y="163" key="refactoring.ChangeSignatureDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1597676011988" />
+    <state x="2343" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1598285531557">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2343" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1440.814/1440.23.1920.1057@1440.23.1920.1057" timestamp="1598285531557" />
   </component>
 </project>
