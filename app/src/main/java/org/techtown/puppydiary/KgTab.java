@@ -33,6 +33,13 @@ public class KgTab extends AppCompatActivity {
     ActionBar actionBar;
     Calendar mCal;
 
+    Button jan;
+    Button feb;
+    Button mar;
+    Button apr;
+    Button may;
+    Button jun;
+
 
 /*
     MainActivity mainActivity;
@@ -107,15 +114,63 @@ public class KgTab extends AppCompatActivity {
             }
         });
 
-        Button jan = findViewById(R.id.jan);
+        jan = findViewById(R.id.jan);
         jan.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View v) {
 
-                    Intent intent_kgpopup = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
-                    startActivity(intent_kgpopup);
+                    Intent intent_kgjan = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                    startActivity(intent_kgjan);
                 }
         });
+        feb = findViewById(R.id.feb);
+        feb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_kgfeb = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                startActivity(intent_kgfeb);
+            }
+        });
+        mar = findViewById(R.id.mar);
+        mar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_kgmar = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                startActivity(intent_kgmar);
+            }
+        });
+        apr = findViewById(R.id.apr);
+        apr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_kgapr = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                startActivity(intent_kgapr);
+            }
+        });
+        may = findViewById(R.id.may);
+        may.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_kgmay = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                startActivity(intent_kgmay);
+            }
+        });
+        jun = findViewById(R.id.jun);
+        jun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                startActivity(intent_kgjun);
+            }
+        });
+
+
+
 
         Button pvs_button = findViewById(R.id.previous);
         Button nxt_button = findViewById(R.id.next);

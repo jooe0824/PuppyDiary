@@ -52,11 +52,12 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
     Button pvs_button;
     Button nxt_button;
 
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

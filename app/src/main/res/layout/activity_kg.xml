@@ -77,7 +77,7 @@
                 android:id="@+id/feb"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
-                android:background="@drawable/rect_kg_box"
+                android:background="@color/Mycolor"
                 android:text="Feb"
                 android:textSize="15sp" />
 

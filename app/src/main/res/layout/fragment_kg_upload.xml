@@ -44,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/kg_weight"
         android:layout_width="176dp"
         android:layout_height="71dp"
@@ -52,8 +52,8 @@
         android:layout_marginLeft="20dp"
         android:background="@drawable/rect_box"
         android:gravity="center_vertical|center_horizontal"
-        android:text="5.5"
-        android:textSize="24sp"
+        android:textSize="15sp"
+        android:hint="몸무게"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/weight"
         app:layout_constraintTop_toTopOf="parent" />
