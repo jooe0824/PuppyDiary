@@ -51,6 +51,15 @@
         android:layout_height="607dp"
         android:layout_weight="1">
 
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/chart"
+            android:layout_width="415dp"
+            android:layout_height="481dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="52dp"
@@ -62,14 +71,15 @@
             <Button
                 android:id="@+id/blank"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="5dp"
                 android:background="@drawable/rect_kg_box"
                 android:textSize="15sp" />
+
             <Button
                 android:id="@+id/jan"
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:background="@drawable/rect_kg_box"
+                android:layout_height="36dp"
+                android:background="#F9F9F9"
                 android:text="Jan"
                 android:textSize="15sp" />
 
@@ -77,7 +87,7 @@
                 android:id="@+id/feb"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
-                android:background="@color/Mycolor"
+                android:background="#F9F9F9"
                 android:text="Feb"
                 android:textSize="15sp" />
 
@@ -85,7 +95,7 @@
                 android:id="@+id/mar"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:background="@drawable/rect_kg_box"
+                android:background="#F9F9F9"
                 android:text="Mar"
                 android:textSize="15sp" />
 
@@ -93,15 +103,15 @@
                 android:id="@+id/apr"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:background="@drawable/rect_kg_box"
+                android:background="#F9F9F9"
                 android:text="Apr"
                 android:textSize="15sp" />
 
             <Button
                 android:id="@+id/may"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:background="@drawable/rect_kg_box"
+                android:layout_height="33dp"
+                android:background="#F9F9F9"
                 android:text="May"
                 android:textSize="15sp" />
 
@@ -109,7 +119,7 @@
                 android:id="@+id/jun"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:background="@drawable/rect_kg_box"
+                android:background="#F9F9F9"
                 android:text="Jun"
                 android:textSize="15sp" />
 
@@ -117,39 +127,39 @@
                 android:id="@+id/jul"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
-                android:background="@drawable/rect_kg_box"
+                android:background="#F9F9F9"
                 android:text="Jul"
                 android:textSize="15sp" />
 
             <Button
                 android:id="@+id/aug"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:background="@drawable/rect_kg_box"
+                android:layout_height="33dp"
+                android:background="#F9F9F9"
                 android:text="Aug"
                 android:textSize="15sp" />
 
             <Button
                 android:id="@+id/sep"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:background="@drawable/rect_kg_box"
+                android:layout_height="33dp"
+                android:background="#F9F9F9"
                 android:text="Sep"
                 android:textSize="15sp" />
 
             <Button
                 android:id="@+id/oct"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:background="@drawable/rect_kg_box"
+                android:layout_height="33dp"
+                android:background="#F9F9F9"
                 android:text="Oct"
                 android:textSize="15sp" />
 
             <Button
                 android:id="@+id/nov"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:background="@drawable/rect_kg_box"
+                android:layout_height="33dp"
+                android:background="#F9F9F9"
                 android:text="Nov"
                 android:textSize="15sp" />
 
@@ -157,23 +167,13 @@
                 android:id="@+id/dec"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
-                android:background="@drawable/rect_kg_box"
+                android:background="#F9F9F9"
                 android:text="Dec"
                 android:textSize="15sp" />
 
 
         </LinearLayout>
 
-        <com.github.mikephil.charting.charts.HorizontalBarChart
-            android:id="@+id/chart"
-            android:layout_width="434dp"
-            android:layout_height="469dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.521"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

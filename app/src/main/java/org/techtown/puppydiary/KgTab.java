@@ -10,14 +10,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import org.techtown.puppydiary.accountmenu.MoneyTab;
+import static org.techtown.puppydiary.KgPopup.puppykg;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -33,13 +37,25 @@ public class KgTab extends AppCompatActivity {
     ActionBar actionBar;
     Calendar mCal;
 
+    public static String kg_month;
+    //double puppyjan = 0;
+    double [] kgpuppy = new double[12];
+    //double [] kgpuppy = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+
     Button jan;
     Button feb;
     Button mar;
     Button apr;
     Button may;
     Button jun;
+    Button jul;
+    Button aug;
+    Button sep;
+    Button oct;
+    Button nov;
+    Button dec;
 
+    static boolean jan_pr = false;
 
 /*
     MainActivity mainActivity;
@@ -59,6 +75,7 @@ public class KgTab extends AppCompatActivity {
     @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kg);
 
@@ -69,17 +86,19 @@ public class KgTab extends AppCompatActivity {
         actionBar = getSupportActionBar();
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
-        getSupportActionBar().setIcon(R.drawable.tab_main_puppy);
+        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        //getSupportActionBar().setCustomView(R.layout.custom_bar);
+
 
         // 캘린더 타이틀(년월 표시)을 세팅한다.
-        tvDate.setText((mCal.get(Calendar.MONTH) + 1) + "월");
+        tvDate.setText((mCal.get(Calendar.YEAR)) + "년");
 
         Button cal = findViewById(R.id.calendar);
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent_calendar = new Intent(getApplicationContext(), CalendarTab.class); //일단 바로 검색결과 띄음
+                Intent intent_calendar = new Intent(getApplicationContext(), CalendarTab.class);
                 startActivity(intent_calendar);
             }
         });
@@ -89,7 +108,7 @@ public class KgTab extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent_kg = new Intent(getApplicationContext(), KgTab.class); //일단 바로 검색결과 띄음
+                Intent intent_kg = new Intent(getApplicationContext(), KgTab.class);
                 startActivity(intent_kg);
             }
         });
@@ -99,7 +118,7 @@ public class KgTab extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent_money = new Intent(getApplicationContext(), MoneyTab.class); //일단 바로 검색결과 띄음
+                Intent intent_money = new Intent(getApplicationContext(), MoneyTab.class);
                 startActivity(intent_money);
             }
         });
@@ -109,65 +128,136 @@ public class KgTab extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent_puppy = new Intent(getApplicationContext(), MypuppyTab.class); //일단 바로 검색결과 띄음
+                Intent intent_puppy = new Intent(getApplicationContext(), MypuppyTab.class);
                 startActivity(intent_puppy);
             }
         });
 
+        // Monthly KG upload BUTTON
+       // puppyjan = puppykg;
         jan = findViewById(R.id.jan);
         jan.setOnClickListener(new View.OnClickListener() {
+               //int jan = 0;
                @Override
                public void onClick(View v) {
-
-                    Intent intent_kgjan = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                    //jan.setSelected(true);
+                    jan.setBackgroundResource(R.drawable.button_pressed);
+                    Intent intent_kgjan = new Intent(getApplicationContext(), KgPopup.class);
                     startActivity(intent_kgjan);
+                    kg_month = "January";
                 }
         });
         feb = findViewById(R.id.feb);
         feb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent_kgfeb = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                feb.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgfeb = new Intent(getApplicationContext(), KgPopup.class);
                 startActivity(intent_kgfeb);
+                kg_month = "February";
             }
         });
         mar = findViewById(R.id.mar);
         mar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent_kgmar = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                mar.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgmar = new Intent(getApplicationContext(), KgPopup.class);
                 startActivity(intent_kgmar);
+                kg_month = "March";
             }
         });
         apr = findViewById(R.id.apr);
         apr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent_kgapr = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                apr.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgapr = new Intent(getApplicationContext(), KgPopup.class);
                 startActivity(intent_kgapr);
+                kg_month = "April";
             }
         });
         may = findViewById(R.id.may);
         may.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent_kgmay = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                may.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgmay = new Intent(getApplicationContext(), KgPopup.class);
                 startActivity(intent_kgmay);
+                kg_month = "May";
             }
         });
         jun = findViewById(R.id.jun);
         jun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class); //일단 바로 검색결과 띄음
+                jun.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class);
                 startActivity(intent_kgjun);
+                kg_month = "June";
             }
         });
+        jul = findViewById(R.id.jul);
+        jul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jul.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class);
+                startActivity(intent_kgjun);
+                kg_month = "July";
+            }
+        });
+        aug= findViewById(R.id.aug);
+        aug.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                aug.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class);
+                startActivity(intent_kgjun);
+                kg_month = "August";
+            }
+        });
+        sep = findViewById(R.id.sep);
+        sep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sep.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class);
+                startActivity(intent_kgjun);
+                kg_month = "September";
+            }
+        });
+        oct = findViewById(R.id.oct);
+        oct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                oct.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class);
+                startActivity(intent_kgjun);
+                kg_month = "October";
+            }
+        });
+        nov = findViewById(R.id.nov);
+        nov.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nov.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class);
+                startActivity(intent_kgjun);
+                kg_month = "November";
+            }
+        });
+        dec = findViewById(R.id.dec);
+        dec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dec.setBackgroundResource(R.drawable.button_pressed);
+                Intent intent_kgjun = new Intent(getApplicationContext(), KgPopup.class);
+                startActivity(intent_kgjun);
+                kg_month = "December";
+            }
+        });
+
 
 
 
@@ -178,15 +268,15 @@ public class KgTab extends AppCompatActivity {
         pvs_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                        mCal.add(Calendar.MONTH, -1);
-                        tvDate.setText((mCal.get(Calendar.MONTH) + 1) + "월");
+                        mCal.add(Calendar.YEAR, -1);
+                        tvDate.setText((mCal.get(Calendar.YEAR)) + "년");
                 }
         });
         nxt_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mCal.add(Calendar.MONTH, +1);
-                tvDate.setText((mCal.get(Calendar.MONTH) + 1) + "월");
+                mCal.add(Calendar.YEAR, +1);
+                tvDate.setText((mCal.get(Calendar.YEAR)) + "년");
             }
         });
 
@@ -199,19 +289,20 @@ public class KgTab extends AppCompatActivity {
         x.setTextSize(0);
         x.setTextColor(0x00000000);
 
+
         ArrayList<BarEntry> entries = new ArrayList();
-        entries.add(new BarEntry(1f, 4));
+        /*entries.add(new BarEntry(1f, puppyjan));
         entries.add(new BarEntry(2f, 4));
-        entries.add(new BarEntry(3f, 4));
-        entries.add(new BarEntry(4f, 3));
-        entries.add(new BarEntry(5f, 3));
+        entries.add(new BarEntry(3f, 0));
+        entries.add(new BarEntry(4f, 0));
+        entries.add(new BarEntry(5f, 0));
         entries.add(new BarEntry(6f, 0));
         entries.add(new BarEntry(7f, 5));
-        entries.add(new BarEntry(8f, 4));
-        entries.add(new BarEntry(9f, 4));
-        entries.add(new BarEntry(10f, 3));
-        entries.add(new BarEntry(11f, 4));
-        entries.add(new BarEntry(12f, 5));
+        entries.add(new BarEntry(8f, 0));
+        entries.add(new BarEntry(9f, 0));
+        entries.add(new BarEntry(10f, 0));
+        entries.add(new BarEntry(11f, 0));
+        entries.add(new BarEntry(12f, 0));*/
 
         BarDataSet dataset = new BarDataSet(entries,"체중(kg)");//속성값
         dataset.setColors(ColorTemplate.COLORFUL_COLORS);//color random
@@ -243,7 +334,6 @@ public class KgTab extends AppCompatActivity {
 
 
 
-
     private ArrayList<String> getXAxisValues() { //x축 라벨 추가
         ArrayList<String> labels = new ArrayList();
         labels.add("Jan");
@@ -265,19 +355,25 @@ public class KgTab extends AppCompatActivity {
 
     private BarDataSet getDataSet() { //표시할 데이터 추가
 
+
+        for(int i =0; i<12 ; i++) {
+            kgpuppy[i] = puppykg[i];
+        }
+        //Log.d("kg", "kg ." + puppyjan);
+
         ArrayList<BarEntry> entries = new ArrayList();
-        entries.add(new BarEntry(1f, 4));
-        entries.add(new BarEntry(2f, 4));
-        entries.add(new BarEntry(3f, 4));
-        entries.add(new BarEntry(4f, 3));
-        entries.add(new BarEntry(5f, 3));
-        entries.add(new BarEntry(6f, 0));
-        entries.add(new BarEntry(7f, 5));
-        entries.add(new BarEntry(8f, 4));
-        entries.add(new BarEntry(9f, 4));
-        entries.add(new BarEntry(10f, 3));
-        entries.add(new BarEntry(11f, 4));
-        entries.add(new BarEntry(12f, 5));
+        entries.add(new BarEntry(1f, (float) kgpuppy[0]));
+        entries.add(new BarEntry(2f, (float) kgpuppy[1]));
+        entries.add(new BarEntry(3f, (float) kgpuppy[2]));
+        entries.add(new BarEntry(4f, (float) kgpuppy[3]));
+        entries.add(new BarEntry(5f, (float) kgpuppy[4]));
+        entries.add(new BarEntry(6f, (float) kgpuppy[5]));
+        entries.add(new BarEntry(7f, (float) kgpuppy[6]));
+        entries.add(new BarEntry(8f, (float) kgpuppy[7]));
+        entries.add(new BarEntry(9f, (float) kgpuppy[8]));
+        entries.add(new BarEntry(10f, (float) kgpuppy[9]));
+        entries.add(new BarEntry(11f, (float) kgpuppy[10]));
+        entries.add(new BarEntry(12f, (float) kgpuppy[11]));
 
         BarDataSet dataset = new BarDataSet(entries,"체중(kg)");//속성값
         dataset.setColors(ColorTemplate.VORDIPLOM_COLORS);//color random

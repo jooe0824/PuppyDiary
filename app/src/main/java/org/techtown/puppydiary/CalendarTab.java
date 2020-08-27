@@ -68,6 +68,13 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
         actionBar = getSupportActionBar();
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_HOME |
+                ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_HOME_AS_UP | ActionBar.DISPLAY_USE_LOGO);
+        actionBar.setIcon(R.drawable.color_big_puppy) ;
+        actionBar.setDisplayUseLogoEnabled(true) ;
+        actionBar.setDisplayShowHomeEnabled(true) ;
+        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        //getSupportActionBar().setCustomView(R.layout.custom_bar);
 
         Button cal = findViewById(R.id.calendar);
         cal.setOnClickListener(new View.OnClickListener() {

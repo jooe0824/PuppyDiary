@@ -44,6 +44,10 @@ public class MainActivity extends AppCompatActivity{
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
 
+        actionBar.setIcon(R.drawable.tab_main_puppy) ;
+        actionBar.setDisplayUseLogoEnabled(true) ;
+        actionBar.setDisplayShowHomeEnabled(true) ;
+
         Button button = findViewById(R.id.splash);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -18,18 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/kg_confirm"
-        android:layout_width="97dp"
-        android:layout_height="63dp"
-        android:background="#FDFAFA"
-        android:text="확인"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724" />
 
     <Button
         android:id="@+id/close"
@@ -54,6 +42,7 @@
         android:gravity="center_vertical|center_horizontal"
         android:textSize="15sp"
         android:hint="몸무게"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/weight"
         app:layout_constraintTop_toTopOf="parent" />
@@ -69,5 +58,33 @@
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toEndOf="@+id/kg_weight"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kg_confirm"
+        android:layout_width="97dp"
+        android:layout_height="63dp"
+        android:background="#FDFAFA"
+        android:text="확인"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/kg_weight"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <TextView
+        android:id="@+id/kgmonth"
+        android:layout_width="206dp"
+        android:layout_height="83dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/Mycolor"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/kg_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
