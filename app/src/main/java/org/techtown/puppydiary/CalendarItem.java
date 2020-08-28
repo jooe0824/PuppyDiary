@@ -1,16 +1,18 @@
 package org.techtown.puppydiary;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CalendarItem extends AppCompatActivity {
-
+    ActionBar actionBar;
     private  static final int REQUEST_CODE = 0;
 
     ImageView image_upload;
@@ -26,6 +28,14 @@ public class CalendarItem extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_calendar_detail);
+
+        actionBar = getSupportActionBar();
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
+        getSupportActionBar().setTitle("댕댕이어리");
+        actionBar.setIcon(R.drawable.white_puppy) ;
+        actionBar.setDisplayUseLogoEnabled(true) ;
+        actionBar.setDisplayShowHomeEnabled(true) ;
+
 
         image_upload = (ImageView) findViewById(R.id.image_upload);
 

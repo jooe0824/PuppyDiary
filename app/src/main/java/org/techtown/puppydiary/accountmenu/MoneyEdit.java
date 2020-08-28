@@ -48,6 +48,11 @@ public class MoneyEdit extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xff006aff));
         getSupportActionBar().setTitle("댕댕이어리");
 
+        actionBar.setIcon(R.drawable.white_puppy) ;
+        actionBar.setDisplayUseLogoEnabled(true) ;
+        actionBar.setDisplayShowHomeEnabled(true) ;
+
+
         Button button = findViewById(R.id.edit);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

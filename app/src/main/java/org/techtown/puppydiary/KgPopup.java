@@ -55,6 +55,10 @@ public class KgPopup extends AppCompatActivity {
         actionBar = getSupportActionBar();
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
+        actionBar.setIcon(R.drawable.white_puppy) ;
+        actionBar.setDisplayUseLogoEnabled(true) ;
+        actionBar.setDisplayShowHomeEnabled(true) ;
+
 
         monthname = kg_month;
         TextView Month = (TextView) findViewById(R.id.kgmonth);

@@ -16,6 +16,7 @@
         <activity android:name=".KgPopup"/>
         <activity android:name=".MypuppyTab"/>
         <activity android:name=".SetPuppy"/>
+        <activity android:name=".CalendarDetail"/>
 
         <activity android:name=".accountmenu.MoneyEdit"/>
 

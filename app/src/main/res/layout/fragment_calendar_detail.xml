@@ -87,6 +87,7 @@
         app:layout_constraintTop_toTopOf="@+id/view_calendardetail"
         app:layout_constraintVertical_bias="0.2" />
 
+
     <ImageView
         android:id="@+id/image_upload"
         android:layout_width="250dp"
@@ -97,7 +98,7 @@
         app:layout_constraintStart_toStartOf="@+id/view_calendardetail"
         app:layout_constraintTop_toBottomOf="@+id/edittext_memo"
         app:layout_constraintVertical_bias="0.1"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        app:srcCompat="@drawable/camera_imageview" />
 
     <Button
         android:id="@+id/btn_canceldetail"

@@ -38,6 +38,10 @@ public class SetPuppy extends AppCompatActivity {
         actionBar = getSupportActionBar();
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
+        actionBar.setIcon(R.drawable.white_puppy) ;
+        actionBar.setDisplayUseLogoEnabled(true) ;
+        actionBar.setDisplayShowHomeEnabled(true) ;
+
 
         TextView textView = findViewById(R.id.textView);
         SpannableString content = new SpannableString("우리 집 댕댕이는요");

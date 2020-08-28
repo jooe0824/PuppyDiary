@@ -1,5 +1,6 @@
 package org.techtown.puppydiary.accountmenu;
 
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -22,8 +24,10 @@ import org.techtown.puppydiary.CalendarTab;
 import org.techtown.puppydiary.KgTab;
 import org.techtown.puppydiary.MypuppyTab;
 import org.techtown.puppydiary.R;
+import org.techtown.puppydiary.SetPuppy;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
@@ -79,10 +83,13 @@ public class MoneyTab extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_money);
 
+
         actionBar = getSupportActionBar();
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
-        getSupportActionBar().setIcon(R.drawable.tab_main_puppy);
+        actionBar.setIcon(R.drawable.white_puppy) ;
+        actionBar.setDisplayUseLogoEnabled(true) ;
+        actionBar.setDisplayShowHomeEnabled(true) ;
 
 
         calendar = findViewById(R.id.calendar);
@@ -153,6 +160,7 @@ public class MoneyTab extends AppCompatActivity{
         Log.d(TAG, "sum : " + sum);
         sum_view.setText(sum);
 
+        /*
         //달력 이동
         btn_go_calendar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,6 +168,30 @@ public class MoneyTab extends AppCompatActivity{
                 Intent intent = new Intent(MoneyTab.this, MoneyCalendar.class);
                 startActivity(intent);
                 //액티비티 옵션 추가 요망
+            }
+        }); */
+
+        Calendar cal = Calendar.getInstance();
+        calendar = findViewById(R.id.money_calendar);
+
+        final int year = cal.get(Calendar.YEAR);
+        final int month = cal.get(Calendar.MONTH);
+        final int day = cal.get(Calendar.DAY_OF_MONTH);
+
+        calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatePickerDialog dialog = new DatePickerDialog(
+                        MoneyTab.this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                                month = month + 1;
+                                String date = year + "/ " + month + "/ " + day;
+                                calendar.setText(date);
+                            }
+                        }, year, month, day);
+                dialog.show();
             }
         });
 

@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
@@ -26,6 +27,7 @@ import java.util.Calendar;
 public class CalendarTab extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     ActionBar actionBar;
+    public static String realmediname;
     // public static Context context;
 
     public static int SUNDAY = 1;
@@ -52,12 +54,11 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
     Button pvs_button;
     Button nxt_button;
 
-    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
-    }*/
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,13 +69,10 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
         actionBar = getSupportActionBar();
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xffD6336B));
         getSupportActionBar().setTitle("댕댕이어리");
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_HOME |
-                ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_HOME_AS_UP | ActionBar.DISPLAY_USE_LOGO);
-        actionBar.setIcon(R.drawable.color_big_puppy) ;
+        actionBar.setIcon(R.drawable.white_puppy) ;
         actionBar.setDisplayUseLogoEnabled(true) ;
         actionBar.setDisplayShowHomeEnabled(true) ;
-        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        //getSupportActionBar().setCustomView(R.layout.custom_bar);
+
 
         Button cal = findViewById(R.id.calendar);
         cal.setOnClickListener(new View.OnClickListener() {
@@ -124,6 +122,8 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
 
         pvs_button.setOnClickListener(this);
         nxt_button.setOnClickListener(this);
+
+        gridView.setOnItemClickListener(this);
 
         dayList = new ArrayList<DayInfo>();
 
@@ -191,7 +191,17 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
     }
 
     @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+    public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+        DayInfo day = dayList.get(position);
+
+        //해당 월에 해당하는 날짜일 때
+        if(day.isInMonth()) {
+            //Toast.makeText(getApplicationContext(),""+position, Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(CalendarTab.this, CalendarDetail.class);
+            intent.putExtra("pos", position);
+            startActivity(intent);
+        }
 
     }
 
@@ -247,11 +257,11 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
             ViewHolder holder = null;
             if (convertView == null) {
                 convertView = minflater.inflate(mresource, null);
-                convertView.setLayoutParams(new GridView.LayoutParams(1080 / 7 + 1080 % 7, 200));
+                convertView.setLayoutParams(new GridView.LayoutParams(1080 / 7 + 1080 % 7, 180));
                 holder = new ViewHolder();
                 holder.tvItem = (TextView) convertView.findViewById(R.id.tv_item_gridview);
-                holder.waterdrop = (Button) convertView.findViewById(R.id.waterdrop);
-                holder.injection = (Button) convertView.findViewById(R.id.injection);
+               // holder.waterdrop = (ImageView) convertView.findViewById(R.id.waterdrop);
+                //holder.injection = (ImageView) convertView.findViewById(R.id.injection);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
@@ -267,12 +277,12 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
                     }
                 } else {
                     holder.tvItem.setTextColor(Color.TRANSPARENT);
-                    holder.waterdrop.setVisibility(View.INVISIBLE);
-                    holder.injection.setVisibility(View.INVISIBLE);
+//                    holder.waterdrop.setVisibility(View.INVISIBLE);
+ //                   holder.injection.setVisibility(View.INVISIBLE);
                 }
             }
 
-            convertView.setId(position);
+            /*convertView.setId(position);
             convertView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -281,19 +291,19 @@ public class CalendarTab extends AppCompatActivity implements View.OnClickListen
 
                     //해당 월에 해당하는 날짜일 때
                     if(day.isInMonth()) {
-                        Intent intent = new Intent(CalendarTab.this, CalendarItem.class);
+                        Intent intent = new Intent(CalendarTab.this, CalendarDetail.class);
                         startActivity(intent);
                     }
                 }
-            });
+            });*/
 
             return convertView;
         }
 
 
         public class ViewHolder {
-            public Button waterdrop;
-            public Button injection;
+            public ImageView waterdrop;
+            public ImageView injection;
             public TextView tvItem;
 
         }
