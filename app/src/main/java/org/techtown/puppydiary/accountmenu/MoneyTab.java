@@ -52,6 +52,7 @@ public class MoneyTab extends AppCompatActivity{
     public static Context context;
 
     Button calendar;
+    Button moneycalendar;
     Button kg;
     Button money;
     Button puppy;
@@ -172,13 +173,13 @@ public class MoneyTab extends AppCompatActivity{
         }); */
 
         Calendar cal = Calendar.getInstance();
-        calendar = findViewById(R.id.money_calendar);
+        moneycalendar = findViewById(R.id.money_calendar);
 
         final int year = cal.get(Calendar.YEAR);
         final int month = cal.get(Calendar.MONTH);
         final int day = cal.get(Calendar.DAY_OF_MONTH);
 
-        calendar.setOnClickListener(new View.OnClickListener() {
+        moneycalendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 DatePickerDialog dialog = new DatePickerDialog(
@@ -188,7 +189,7 @@ public class MoneyTab extends AppCompatActivity{
                             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                                 month = month + 1;
                                 String date = year + "/ " + month + "/ " + day;
-                                calendar.setText(date);
+                                thedate.setText(date);
                             }
                         }, year, month, day);
                 dialog.show();

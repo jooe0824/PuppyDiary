@@ -11,41 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="045e4178-f0b5-4cd9-8820-a7f378a9fd97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/CalendarDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/DBHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/Signup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/camera.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/camera_imageview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/white_puppy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/white_puppy2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/CalendarItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/CalendarItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/CalendarTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/CalendarTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/KgPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/KgPopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/KgTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/KgTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MypuppyTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/MypuppyTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/SetPuppy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/SetPuppy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/accountmenu/MoneyCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/accountmenu/MoneyCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/accountmenu/MoneyEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/accountmenu/MoneyEdit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/accountmenu/MoneyTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/puppydiary/accountmenu/MoneyTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar_detail.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,41 +196,45 @@
     <state x="2473" y="302" key="AndroidCreateResourceFileDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598546197161" />
     <state x="616" y="252" key="AndroidCreateResourceFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1598343445490" />
     <state x="2261" y="319" key="AndroidCreateResourceFileDialog/0.23.1440.814/1440.23.1920.1057@1440.23.1920.1057" timestamp="1598520734303" />
-    <state width="908" height="243" key="GridCell.Tab.0.bottom" timestamp="1598624067168">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1002" height="243" key="GridCell.Tab.0.bottom" timestamp="1598627277673">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="908" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598624067168" />
     <state width="1396" height="290" key="GridCell.Tab.0.bottom/0.23.1440.810/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597683317291" />
     <state width="1348" height="286" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1598336611006" />
     <state width="1207" height="188" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1598359332814" />
     <state width="1288" height="188" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1598343042022" />
+    <state width="1002" height="243" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1598627277673" />
     <state width="1111" height="293" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598534959130" />
-    <state width="908" height="243" key="GridCell.Tab.0.center" timestamp="1598624067159">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1002" height="243" key="GridCell.Tab.0.center" timestamp="1598627277672">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="908" height="243" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598624067159" />
     <state width="1396" height="290" key="GridCell.Tab.0.center/0.23.1440.810/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597683317290" />
     <state width="1348" height="286" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1598336611006" />
     <state width="1207" height="188" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1598359332813" />
     <state width="1288" height="188" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1598343042020" />
+    <state width="1002" height="243" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1598627277672" />
     <state width="1111" height="293" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598534959128" />
-    <state width="908" height="243" key="GridCell.Tab.0.left" timestamp="1598624067156">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1002" height="243" key="GridCell.Tab.0.left" timestamp="1598627277671">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="908" height="243" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598624067156" />
     <state width="1396" height="290" key="GridCell.Tab.0.left/0.23.1440.810/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597683317289" />
     <state width="1348" height="286" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1598336611005" />
     <state width="1207" height="188" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1598359332813" />
     <state width="1288" height="188" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1598343042019" />
+    <state width="1002" height="243" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1598627277671" />
     <state width="1111" height="293" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598534959127" />
-    <state width="908" height="243" key="GridCell.Tab.0.right" timestamp="1598624067162">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1002" height="243" key="GridCell.Tab.0.right" timestamp="1598627277672">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="908" height="243" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598624067162" />
     <state width="1396" height="290" key="GridCell.Tab.0.right/0.23.1440.810/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597683317290" />
     <state width="1348" height="286" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1598336611006" />
     <state width="1207" height="188" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1598359332814" />
     <state width="1288" height="188" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1598343042021" />
+    <state width="1002" height="243" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1598627277672" />
     <state width="1111" height="293" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1598534959129" />
     <state x="515" y="234" key="chooseDestDirectoryDialog" timestamp="1598612131839">
       <screen x="0" y="23" width="1440" height="812" />
@@ -265,10 +244,11 @@
     <state x="515" y="234" key="chooseDestDirectoryDialog/0.23.1440.812@0.23.1440.812" timestamp="1598612131839" />
     <state x="515" y="235" key="chooseDestDirectoryDialog/0.23.1440.814@0.23.1440.814" timestamp="1598346302290" />
     <state x="515" y="237" key="chooseDestDirectoryDialog/0.23.1440.821@0.23.1440.821" timestamp="1598345633789" />
-    <state x="511" y="213" key="com.intellij.ide.util.TipDialog" timestamp="1598623310837">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="511" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1598691485657">
+      <screen x="0" y="23" width="1440" height="810" />
     </state>
     <state x="511" y="210" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1598610219184" />
+    <state x="511" y="212" key="com.intellij.ide.util.TipDialog/0.23.1440.810@0.23.1440.810" timestamp="1598691485657" />
     <state x="2121" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.812/1440.23.1920.1057@1440.23.1920.1057" timestamp="1597673085003" />
     <state x="511" y="213" key="com.intellij.ide.util.TipDialog/0.23.1440.814/1440.23.1920.1057@0.23.1440.814" timestamp="1598623310837" />
     <state x="2107" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1597676011988">
